@@ -3,7 +3,9 @@
     <head>
 
         <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="one_page_website.css">
+		<script src="./JS/one_page_website.js"></script>
 		<title> London, England</title>
 
 	</head>
@@ -24,16 +26,77 @@
 				</ul>
 		</nav>
 					<!--End Nav-->
-<style>
-	.img {
-		text-align:center;
-	}
-</style>
+
+<!--lightbox-->
+<div class="row">
+	<div class="column">
+	  <img src="https://a.cdn-hotels.com/gdcs/production29/d1870/6a5ec560-bb25-11e8-970b-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="https://a.cdn-hotels.com/gdcs/production107/d1500/bffd5ae3-a81d-4246-b4d9-583418ed33de.jpg?impolicy=fcrop&w=800&h=533&q=medium" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="https://a.cdn-hotels.com/gdcs/production37/d1140/7d7590dc-4f01-4e12-8163-a8809fc414c4.jpg?impolicy=fcrop&w=800&h=533&q=medium" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="https://a.cdn-hotels.com/gdcs/production117/d1848/854ad498-82cd-40ed-9551-0ffe6cdad7ca.jpg?impolicy=fcrop&w=800&h=533&q=medium" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="https://a.cdn-hotels.com/gdcs/production29/d1870/6a5ec560-bb25-11e8-970b-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="https://a.cdn-hotels.com/gdcs/production107/d1500/bffd5ae3-a81d-4246-b4d9-583418ed33de.jpg?impolicy=fcrop&w=800&h=533&q=medium" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="https://a.cdn-hotels.com/gdcs/production37/d1140/7d7590dc-4f01-4e12-8163-a8809fc414c4.jpg?impolicy=fcrop&w=800&h=533&q=medium" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="https://a.cdn-hotels.com/gdcs/production117/d1848/854ad498-82cd-40ed-9551-0ffe6cdad7ca.jpg?impolicy=fcrop&w=800&h=533&q=medium" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="https://a.cdn-hotels.com/gdcs/production29/d1870/6a5ec560-bb25-11e8-970b-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium" onclick="currentSlide(1)" alt="Big Ben">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="https://a.cdn-hotels.com/gdcs/production107/d1500/bffd5ae3-a81d-4246-b4d9-583418ed33de.jpg?impolicy=fcrop&w=800&h=533&q=medium" onclick="currentSlide(2)" alt="Buckingham Palace">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="https://a.cdn-hotels.com/gdcs/production37/d1140/7d7590dc-4f01-4e12-8163-a8809fc414c4.jpg?impolicy=fcrop&w=800&h=533&q=medium" onclick="currentSlide(3)" alt="
+		Natural History Museum">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="https://a.cdn-hotels.com/gdcs/production117/d1848/854ad498-82cd-40ed-9551-0ffe6cdad7ca.jpg?impolicy=fcrop&w=800&h=533&q=medium" onclick="currentSlide(4)" alt="Oxford Street">
+	  </div>
+	</div>
+  </div>
 
 
-<div class="img">
-	<img src="london.jpg" alt="Tower Bridge, London.">
-</div>
 
 				<!-- Intro/ Home-->
 <section>
